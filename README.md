@@ -14,6 +14,13 @@ An itemset is a frequent itemset if its support is higher or equal to the smalle
 
 Reference to the algorithm can be found in the book 'Web Data Mining: Exploring hyperlinks, contents and usage data' by Bing Liu.
 
+### Parameters considered -
+Must Have : Item IDs which must be present in any given itemset
+
+Cannot Be Together : Item IDs which cannot be together in the same itemset
+
+Support Difference Constraint : Difference between max(MIS(i)) and min(MIS(i)) cannot be larger than a constant 'phi'
+
 ## Steps to setup the code - 
 1. INPUT FILE PATH - Set input file path in MSAP.java file. (Line 212 on Text editor)
 2. PARAMETER FILE PATH - Set parameter file path in MSAP.java file. (Line 235 on Text editor)
